@@ -74,7 +74,7 @@
   const initMobileMenu = () => {
     const toggleBtn = document.querySelector(".mobile-nav-toggle");
     const drawer = document.querySelector(".mobile-menu-drawer");
-    const links = document.querySelectorAll(".mobile-nav-links a");
+    const links = document.querySelectorAll(".mobile-menu-drawer a");
 
     if (!toggleBtn || !drawer) return;
 
