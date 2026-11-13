@@ -4,635 +4,1196 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Shivam Kumar | Software Development Engineer 2 | Backend-Focused Full Stack Developer</title>
-  <meta content="Portfolio and Resume of Shivam Kumar - SDE 2 / Backend-Focused Full Stack Developer with 4.3 years of experience in Node.js, PHP, Laravel, Nest.js, Next.js, REST APIs, and Cloud Architecture." name="description">
-  <meta content="Shivam Kumar, SDE 2, Backend Developer, Full Stack Developer, Node.js, PHP, Laravel, CodeIgniter, Nest.js, Next.js, React, Angular, MySQL, REST API, Delhi" name="keywords">
+  <meta content="Portfolio and Resume of Shivam Kumar - SDE 2 / Backend-Focused Full Stack Developer with 4.3+ years of experience in Node.js, PHP, Laravel, Nest.js, Next.js, REST APIs, Payment Integrations, and Cloud Architecture." name="description">
+  <meta content="Shivam Kumar, SDE 2, Backend Developer, Full Stack Developer, Node.js, PHP, Laravel, CodeIgniter, Nest.js, Next.js, React, Angular, MySQL, REST API, Delhi, 21st dev design" name="keywords">
 
-  <!-- Favicons -->
+  <!-- Favicon -->
   <link href="assets/img/profile.png" rel="icon">
   <link href="assets/img/profile.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+  <!-- 21st.dev Pro Design System CSS -->
+  <link href="assets/css/pro-21st.css" rel="stylesheet">
 
-  <!-- Custom Enhanced Styles -->
+  <!-- Custom In-line tweaks for keyframe animations -->
   <style>
-    /* Skill Card Enhancements */
-    .skill-card {
-      background: #ffffff;
-      border: 1px solid rgba(20, 157, 221, 0.16);
-      border-radius: 12px;
-      padding: 22px;
-      height: 100%;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
-      display: flex;
-      flex-direction: column;
-    }
-    .skill-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(20, 157, 221, 0.18);
-      border-color: #149ddd;
-    }
-    .skill-card-header {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-    .skill-card-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 10px;
-      background: rgba(20, 157, 221, 0.1);
-      color: #149ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      flex-shrink: 0;
-    }
-    .skill-card-header h4 {
-      margin: 0;
-      font-size: 17px;
-      font-weight: 700;
-      color: #050d18;
-    }
-    .skill-badges-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-    }
-    .skill-badge {
-      display: inline-block;
-      background: #f1f8fc;
-      color: #0c567a;
-      padding: 5px 11px;
-      border-radius: 20px;
-      font-size: 13px;
-      font-weight: 500;
-      border: 1px solid rgba(20, 157, 221, 0.22);
-      transition: all 0.2s ease;
-    }
-    .skill-badge:hover {
-      background: #149ddd;
-      color: #ffffff;
-      border-color: #149ddd;
-    }
-
-    /* Project Cards */
-    .project-card {
-      background: #ffffff;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 12px;
-      padding: 24px;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
-      position: relative;
-    }
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
-      border-color: #149ddd;
-    }
-    .project-card .project-category {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      font-weight: 700;
-      color: #149ddd;
-      margin-bottom: 6px;
-    }
-    .project-card h4 {
-      font-size: 19px;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: #050d18;
-    }
-    .project-card p {
-      font-size: 14px;
-      color: #4b5563;
-      line-height: 1.6;
-      margin-bottom: 14px;
-    }
-    .project-tech {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-bottom: 16px;
-    }
-    .tech-pill {
-      font-size: 11.5px;
-      background: #f3f4f6;
-      color: #374151;
-      padding: 3px 9px;
-      border-radius: 4px;
-      font-weight: 600;
-    }
-    .project-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: auto;
-      padding-top: 12px;
-      border-top: 1px solid #f0f0f0;
-    }
-
-    /* Action & Doc Badges */
-    .btn-project {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12.5px;
-      font-weight: 600;
-      padding: 6px 14px;
-      border-radius: 6px;
-      background: #149ddd;
-      color: #ffffff !important;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    .btn-project:hover {
-      background: #0f7bb0;
-      transform: translateY(-1px);
-    }
-    .btn-project-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12.5px;
-      font-weight: 600;
-      padding: 5px 13px;
-      border-radius: 6px;
-      background: #f8fafc;
-      color: #149ddd !important;
-      border: 1px solid #149ddd;
-      text-decoration: none;
-      transition: all 0.2s ease;
-    }
-    .btn-project-outline:hover {
-      background: #149ddd;
-      color: #ffffff !important;
-    }
-    .api-badge-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 12px;
-      padding: 5px 12px;
-      border-radius: 6px;
-      background: #f0f7fb;
-      color: #149ddd;
-      border: 1px solid #c8e5f7;
-      text-decoration: none;
-      font-weight: 500;
-      margin: 3px 4px 3px 0;
-      transition: 0.2s ease;
-    }
-    .api-badge-link:hover {
-      background: #149ddd;
-      color: #ffffff;
-      border-color: #149ddd;
-    }
-
-    /* Key Strength Cards */
-    .strength-card {
-      background: #ffffff;
-      border-left: 4px solid #149ddd;
-      border-radius: 0 10px 10px 0;
-      padding: 18px 20px;
-      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
-      height: 100%;
-      transition: all 0.3s ease;
-    }
-    .strength-card:hover {
-      transform: translateX(4px);
-      box-shadow: 0 6px 20px rgba(20, 157, 221, 0.12);
-    }
-    .strength-card h5 {
-      font-size: 16px;
-      font-weight: 700;
-      color: #050d18;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .strength-card p {
-      font-size: 13.5px;
-      color: #4b5563;
-      margin-bottom: 0;
-      line-height: 1.5;
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
     }
   </style>
-
 </head>
 
-<body class="index-page">
+<body>
 
-  <!-- Header -->
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+  <!-- Top Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
 
-    <div class="profile-img">
-      <img src="assets/img/profile.png" alt="Shivam Kumar" class="img-fluid rounded-circle">
-    </div>
+  <!-- Ambient Radiant Glow Orbs -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-glow-3"></div>
 
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Shivam Kumar</h1>
-    </a>
-   
-    <p class="text-center text-white-50 px-3 mb-2" style="font-size: 12px; font-weight: 500; letter-spacing: 0.3px;">
-      SDE 2 | Backend-Focused Full Stack Developer
-    </p>
+  <!-- ==========================================================================
+       Top Navigation Bar (21st.dev Floating Glass Header)
+       ========================================================================== -->
+  <header class="top-nav-wrapper">
+    <div class="top-nav-container">
+      
+      <!-- Brand Logo / Avatar -->
+      <a href="#hero" class="nav-brand">
+        <div class="nav-avatar-wrap">
+          <img src="assets/img/profile.png" alt="Shivam Kumar" class="nav-avatar">
+        </div>
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Shivam Kumar</span>
+          <span class="nav-brand-badge">SDE 2 &bull; BACKEND</span>
+        </div>
+      </a>
 
-    <div class="social-links text-center">
-      <a href="https://github.com/Shivam-poddar66" target="_blank" class="github" title="GitHub"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-      <a href="https://wa.me/919472774549" target="_blank" class="whatsapp" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-      <a href="mailto:shivamkcv@gmail.com" class="envelope" title="Email"><i class="bi bi-envelope"></i></a>
-      <a href="https://x.com/shivamnnr?t=xtCbCu-QwPgc160fN8nEdw&s=09" target="_blank" class="twitter" title="Twitter / X"><i class="bi bi-twitter-x"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
-        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
-        <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-grid-fill navicon"></i> Projects</a></li>
-        <li><a href="#highlights"><i class="bi bi-star navicon"></i> Highlights</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      <!-- Center Navigation Links -->
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="#about"><i class="bi bi-person"></i> About</a></li>
+        <li class="nav-link-item"><a href="#experience"><i class="bi bi-briefcase"></i> Experience</a></li>
+        <li class="nav-link-item"><a href="#projects"><i class="bi bi-layers"></i> Projects</a></li>
+        <li class="nav-link-item"><a href="#skills"><i class="bi bi-code-slash"></i> Skills</a></li>
+        <li class="nav-link-item"><a href="#highlights"><i class="bi bi-stars"></i> Highlights</a></li>
+        <li class="nav-link-item"><a href="#education"><i class="bi bi-mortarboard"></i> Education</a></li>
+        <li class="nav-link-item"><a href="#contact"><i class="bi bi-envelope"></i> Contact</a></li>
       </ul>
-    </nav>
 
+      <!-- Right Actions: Socials + Resume + Hire Me Button -->
+      <div class="nav-actions">
+        <a href="https://github.com/Shivam-poddar66" target="_blank" class="nav-social-btn" title="GitHub" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank" class="nav-social-btn" title="LinkedIn" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        
+        <a href="shivam kumar 04-2025.pdf" download class="btn-shimmer d-none d-sm-inline-flex" title="Download CV">
+          <i class="bi bi-arrow-down-circle"></i>
+          <span>Resume PDF</span>
+        </a>
+
+        <a href="#contact" class="btn-shimmer">
+          <i class="bi bi-send"></i>
+          <span>Hire Me</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+    </div>
   </header>
 
-  <main class="main">
+  <!-- Mobile Dropdown Menu Drawer -->
+  <div class="mobile-menu-drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero"><i class="bi bi-house"></i> Home</a></li>
+      <li><a href="#about"><i class="bi bi-person"></i> About Me</a></li>
+      <li><a href="#experience"><i class="bi bi-briefcase"></i> Professional Experience</a></li>
+      <li><a href="#projects"><i class="bi bi-layers"></i> Selected Projects</a></li>
+      <li><a href="#skills"><i class="bi bi-code-slash"></i> Technical Skills</a></li>
+      <li><a href="#highlights"><i class="bi bi-stars"></i> Key Highlights</a></li>
+      <li><a href="#education"><i class="bi bi-mortarboard"></i> Education</a></li>
+      <li><a href="#contact"><i class="bi bi-envelope"></i> Contact Me</a></li>
+    </ul>
+    <div class="d-flex gap-2 pt-2 border-top border-secondary border-opacity-25">
+      <a href="shivam kumar 04-2025.pdf" download class="btn-shimmer flex-grow-1 justify-content-center text-center">
+        <i class="bi bi-download"></i> Download Resume PDF
+      </a>
+    </div>
+  </div>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-      <img src="assets/img/bg.png" alt="Background" data-aos="fade-in">
+  <main>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Shivam Kumar</h2>
-        <p>I am a <span class="typed" data-typed-items="Software Development Engineer 2, Backend-Focused Full Stack Developer, Node.js & PHP Specialist, REST API & System Architect, AI & Cloud Integrator">Software Development Engineer 2</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
-        <div class="mt-4">
-          <a href="#resume" class="btn btn-primary px-4 py-2 me-2" style="background: var(--accent-color); border: none; border-radius: 20px;"><i class="bi bi-file-earmark-text me-1"></i> View Resume</a>
-          <a href="#contact" class="btn btn-outline-light px-4 py-2" style="border-radius: 20px;"><i class="bi bi-chat-dots me-1"></i> Contact Me</a>
-        </div>
-      </div>
-    </section><!-- /Hero Section -->
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section id="hero" class="hero-pro">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          
+          <!-- Hero Copy -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-duration="800">
+            
+            <!-- Live Availability Status Pill -->
+            <div class="status-pill">
+              <span class="status-indicator">
+                <span class="status-indicator-ping"></span>
+                <span class="status-indicator-dot"></span>
+              </span>
+              <span>Available for Senior Backend & SDE 2 Roles</span>
+            </div>
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+            <h1 class="hero-title">
+              Crafting <span class="text-gradient">Resilient Backend</span> & Cloud Platforms.
+            </h1>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>Backend-focused Software Development Engineer with 4.3 years of professional experience building and maintaining production-grade web applications, REST APIs, booking platforms, payment workflows, and third-party integrations.</p>
-      </div><!-- End Section Title -->
+            <div class="hero-subtitle">
+              <span>I am Shivam Kumar — </span>
+              <span class="text-gradient-cyan typed" data-typed-items="Software Development Engineer 2, Backend-Focused Full Stack Developer, Node.js & Nest.js Architect, PHP & Laravel Specialist, REST API & Database Optimizer, High-Concurrency System Engineer">Software Development Engineer 2</span>
+            </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4 justify-content-center">
-          <div class="col-lg-4 text-center">
-            <img src="assets/img/profile.png" class="img-fluid rounded shadow" alt="Shivam Kumar" style="max-height: 420px; object-fit: cover;">
-          </div>
-          <div class="col-lg-8 content">
-            <h2>Software Development Engineer 2 (SDE 2)</h2>
-            <h5 class="text-primary mb-3">Backend-Focused Full Stack Developer</h5>
-            <p class="py-2" style="line-height: 1.7; color: #374151;">
-              Backend-focused Software Development Engineer with <strong>4.3 years</strong> of professional experience building and maintaining production-grade web applications, REST APIs, booking platforms, payment workflows, and third-party integrations. Strong hands-on experience with <strong>Node.js, JavaScript, PHP, Laravel, CodeIgniter, Nest.js, Next.js, React.js, and Angular</strong>. Experienced in backend development and debugging, database optimization, external API integrations, and customer-facing real-estate and facility-management platforms. Proficient in <strong>AWS, GCP, Git, GitHub, Jira, Swagger/OpenAPI, Jenkins CI/CD, and AI integration</strong>.
+            <p class="hero-description">
+              Backend-focused Software Development Engineer with <strong>4.3+ years</strong> of hands-on production experience architecting robust REST APIs, booking engines, payment gateway integrations, and cloud infrastructure across high-scale enterprise platforms.
             </p>
 
-            <div class="row my-3">
-              <div class="col-lg-6">
-                <ul class="list-unstyled">
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>Location:</strong> <span>Delhi, India</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>Phone:</strong> <span>+91 9472774549</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>Email:</strong> <span>shivamkcv@gmail.com</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>Experience:</strong> <span>4.3+ Years</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled">
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>Degree:</strong> <span>MCA (Master of Computer Applications)</span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>GitHub:</strong> <span><a href="https://github.com/Shivam-poddar66" target="_blank">Shivam-poddar66</a></span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>LinkedIn:</strong> <span><a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank">shivam-kumar-747973204</a></span></li>
-                  <li class="py-1"><i class="bi bi-chevron-right text-primary me-2"></i><strong>Availability:</strong> <span>Full-Time / High-Impact Roles</span></li>
-                </ul>
-              </div>
+            <!-- Hero Action Buttons -->
+            <div class="d-flex flex-wrap gap-3 hero-actions">
+              <a href="#projects" class="btn-primary-glow">
+                <span>Explore Projects</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+
+              <a href="shivam kumar 04-2025.pdf" download class="btn-secondary-glass">
+                <i class="bi bi-file-earmark-arrow-down"></i>
+                <span>Download Resume</span>
+              </a>
+
+              <a href="https://wa.me/919472774549" target="_blank" class="btn-secondary-glass">
+                <i class="bi bi-whatsapp text-success"></i>
+                <span>Quick WhatsApp</span>
+              </a>
             </div>
 
-            <div class="p-3 bg-light rounded border">
-              <strong>Core Engineering Specialization:</strong><br>
-              <span class="text-secondary" style="font-size: 14px;">
-                Node.js &bull; Express.js &bull; Nest.js &bull; Core PHP &bull; Laravel &bull; CodeIgniter &bull; REST API Design &bull; Next.js &bull; React.js &bull; Angular &bull; MySQL &bull; MongoDB &bull; Database Indexing &bull; Query Optimization &bull; AWS EC2/S3 &bull; GCP &bull; Jenkins CI/CD &bull; GitHub Actions &bull; AI Document Processing &bull; Payment Workflows (PayU, Cashfree, PhonePe, Roundpay) &bull; Swagger / OpenAPI &bull; Jira
-              </span>
+            <!-- Mini Tech Ticker -->
+            <div class="mt-4 pt-3 d-flex align-items-center gap-3 flex-wrap">
+              <span class="text-muted small fw-semibold text-uppercase font-monospace" style="letter-spacing: 1px;">Core Tech:</span>
+              <span class="badge bg-dark border border-secondary text-light px-2 py-1">Node.js</span>
+              <span class="badge bg-dark border border-secondary text-light px-2 py-1">Express / Nest.js</span>
+              <span class="badge bg-dark border border-secondary text-light px-2 py-1">PHP / Laravel</span>
+              <span class="badge bg-dark border border-secondary text-light px-2 py-1">MySQL & Mongo</span>
+              <span class="badge bg-dark border border-secondary text-light px-2 py-1">AWS & GCP</span>
+              <span class="badge bg-dark border border-secondary text-light px-2 py-1">Docker & CI/CD</span>
             </div>
 
+          </div>
+
+          <!-- Hero Avatar & Conic Glowing Card -->
+          <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="900" data-aos-delay="200">
+            
+            <div class="hero-avatar-card">
+              <div class="hero-avatar-inner">
+                <img src="assets/img/profile.png" alt="Shivam Kumar" class="hero-avatar-img">
+                
+                <div class="hero-avatar-overlay">
+                  <span class="text-white fw-bold fs-5">Shivam Kumar</span>
+                  <span class="text-gradient-cyan small fw-semibold">SDE 2 &bull; Vianaar Home PVT LTD</span>
+                </div>
+              </div>
+
+              <!-- Floating Metric Chip 1 -->
+              <div class="floating-chip floating-chip-1">
+                <div class="stat-icon" style="width: 36px; height: 36px; font-size: 16px;">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <div class="text-start">
+                  <div class="text-white fw-bold small">4.3+ Years</div>
+                  <div class="text-muted" style="font-size: 11px;">Production Dev</div>
+                </div>
+              </div>
+
+              <!-- Floating Metric Chip 2 -->
+              <div class="floating-chip floating-chip-2">
+                <div class="stat-icon" style="width: 36px; height: 36px; font-size: 16px; background: rgba(6, 182, 212, 0.15); color: #06b6d4; border-color: rgba(6, 182, 212, 0.3);">
+                  <i class="bi bi-lightning-charge"></i>
+                </div>
+                <div class="text-start">
+                  <div class="text-white fw-bold small">200+ APIs</div>
+                  <div class="text-muted" style="font-size: 11px;">Shipped & Scaled</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ==========================================================================
+             Stats Bento Strip
+             ========================================================================== -->
+        <div class="stats-grid" data-aos="fade-up" data-aos-delay="300">
+          
+          <div class="stat-box spotlight-card">
+            <div class="stat-icon">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <div>
+              <div class="stat-number">
+                <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter">4</span>.3+
+              </div>
+              <div class="stat-label">Years of Production Experience</div>
+            </div>
+          </div>
+
+          <div class="stat-box spotlight-card">
+            <div class="stat-icon" style="background: rgba(6, 182, 212, 0.12); color: #06b6d4; border-color: rgba(6, 182, 212, 0.25);">
+              <i class="bi bi-hdd-network"></i>
+            </div>
+            <div>
+              <div class="stat-number">
+                <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter">200</span>+
+              </div>
+              <div class="stat-label">APIs Built & Maintained</div>
+            </div>
+          </div>
+
+          <div class="stat-box spotlight-card">
+            <div class="stat-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981; border-color: rgba(16, 185, 129, 0.25);">
+              <i class="bi bi-bug"></i>
+            </div>
+            <div>
+              <div class="stat-number">
+                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter">30</span>+
+              </div>
+              <div class="stat-label">Bugs Resolved per Sprint</div>
+            </div>
+          </div>
+
+          <div class="stat-box spotlight-card">
+            <div class="stat-icon" style="background: rgba(236, 72, 153, 0.12); color: #ec4899; border-color: rgba(236, 72, 153, 0.25);">
+              <i class="bi bi-kanban"></i>
+            </div>
+            <div>
+              <div class="stat-number">
+                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter">8</span>+
+              </div>
+              <div class="stat-label">Enterprise Platforms Delivered</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Section (Bento Grid)
+         ========================================================================== -->
+    <section id="about" class="section-pro">
+      <div class="container">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-person-badge"></i> Candidate Overview</span>
+          <h2 class="section-heading">Architectural Mindset, Production Results</h2>
+          <p class="section-subtext">
+            Specializing in high-throughput API design, booking engines, payment workflows, and intelligent document processing.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Bento Card 1: Bio Story -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px;">
+                  <i class="bi bi-terminal"></i>
+                </div>
+                <div>
+                  <h3 class="h5 mb-0 text-white fw-bold">Engineering Background</h3>
+                  <span class="text-gradient-cyan small font-monospace">Software Development Engineer 2 (SDE 2)</span>
+                </div>
+              </div>
+
+              <p class="text-secondary" style="font-size: 15px; line-height: 1.75;">
+                I am a backend-focused Software Development Engineer with <strong>4.3+ years</strong> of professional industry experience engineering, maintaining, and scaling production-grade web systems. My expertise spans <strong>Node.js, Express, Nest.js, Core PHP, Laravel, and CodeIgniter</strong>, complemented by modern frontend libraries including <strong>Next.js, React, and Angular</strong>.
+              </p>
+              
+              <p class="text-secondary" style="font-size: 15px; line-height: 1.75;">
+                Currently at <strong>Vianaar Home PVT LTD</strong>, I spearhead backend APIs powering <em>The Blue Kite</em> PMS, FMS, real-estate workflows, dynamic pricing engines (Rentals United, PriceLabs), and complex pre-authorization payment flows. I thrive on diving deep into database profiling (MySQL / MongoDB), eliminating latency bottlenecks, and maintaining spotless OpenAPI/Swagger specifications.
+              </p>
+
+              <div class="p-3 mt-3 rounded-3" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle);">
+                <div class="text-white fw-semibold mb-2 small"><i class="bi bi-check2-circle text-primary me-2"></i>Core Specialization Matrix:</div>
+                <div class="d-flex flex-wrap gap-2">
+                  <span class="skill-badge-item">Node.js / Nest.js</span>
+                  <span class="skill-badge-item">PHP / Laravel</span>
+                  <span class="skill-badge-item">RESTful & OpenAPI 3.0</span>
+                  <span class="skill-badge-item">Payment Gateways (PayU, Cashfree, PhonePe)</span>
+                  <span class="skill-badge-item">MySQL / Query Profiling</span>
+                  <span class="skill-badge-item">AWS EC2 / S3 & GCP</span>
+                  <span class="skill-badge-item">Jenkins CI/CD Pipelines</span>
+                  <span class="skill-badge-item">AI Document Processing (IDP)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Bento Card 2: Quick Connect & Metadata -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="spotlight-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="h5 text-white fw-bold mb-3 d-flex align-items-center gap-2">
+                  <i class="bi bi-info-circle text-primary"></i> Key Details
+                </h3>
+
+                <ul class="list-unstyled mb-4">
+                  <li class="py-2 border-bottom border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">Location:</span>
+                    <span class="text-white fw-medium">Delhi, India</span>
+                  </li>
+                  <li class="py-2 border-bottom border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">Experience:</span>
+                    <span class="text-gradient-cyan fw-bold font-monospace">4.3+ Years</span>
+                  </li>
+                  <li class="py-2 border-bottom border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">Education:</span>
+                    <span class="text-white fw-medium">MCA (Jan 2024)</span>
+                  </li>
+                  <li class="py-2 border-bottom border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">Availability:</span>
+                    <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50">Active / Immediate</span>
+                  </li>
+                  <li class="py-2 border-bottom border-secondary border-opacity-10 d-flex justify-content-between align-items-center">
+                    <span class="text-muted small">English / Hindi:</span>
+                    <span class="text-white fw-medium">Professional Fluent</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Interactive Copy Pills -->
+              <div class="pt-2">
+                <div class="mb-2">
+                  <span class="text-muted small d-block mb-1">Direct Contact:</span>
+                  <div class="d-flex align-items-center justify-content-between p-2 rounded-3" style="background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-subtle);">
+                    <span class="font-monospace small text-white">shivamkcv@gmail.com</span>
+                    <button class="copy-pill-btn" data-copy="shivamkcv@gmail.com" title="Copy Email">
+                      <i class="bi bi-clipboard"></i> Copy
+                    </button>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="d-flex align-items-center justify-content-between p-2 rounded-3" style="background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border-subtle);">
+                    <span class="font-monospace small text-white">+91 9472774549</span>
+                    <button class="copy-pill-btn" data-copy="+919472774549" title="Copy Phone">
+                      <i class="bi bi-clipboard"></i> Copy
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Professional Experience Section (Timeline Bento)
+         ========================================================================== -->
+    <section id="experience" class="section-pro">
+      <div class="container">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-briefcase"></i> Career Journey</span>
+          <h2 class="section-heading">Professional Experience</h2>
+          <p class="section-subtext">
+            Track record of shipping mission-critical backend systems, complex API workflows, and rapid bug resolution.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="timeline-pro">
+
+              <!-- Role 1: Vianaar Home PVT LTD -->
+              <div class="timeline-node" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="spotlight-card">
+                  
+                  <div class="job-header">
+                    <div>
+                      <h3 class="job-role">Software Development Engineer 2 (SDE 2)</h3>
+                      <div class="job-company">Vianaar Home PVT LTD &bull; thebluekite.com</div>
+                    </div>
+                    <span class="job-period"><i class="bi bi-calendar3"></i> JUL 2024 – PRESENT</span>
+                  </div>
+
+                  <ul class="job-bullets">
+                    <li>Architect, build, and maintain robust <strong>Node.js REST APIs</strong> powering homebuyer customer journeys, property operations, reservation workflows, payments, and dashboards.</li>
+                    <li>Actively engineered, expanded, and maintained over <strong>200+ REST APIs</strong> across high-traffic customer-facing web apps, Property Management System (PMS), Facility Management System (FMS), and internal operational tools.</li>
+                    <li>Resolved <strong>30+ API bugs per sprint</strong> with disciplined triage across Node.js, Next.js, Angular, and Core PHP production codebases.</li>
+                    <li>Engineered key modules for <em>The Blue Kite PMS & FMS</em>, enabling automated multi-property reservations, inventory tracking, and owner statements.</li>
+                    <li>Integrated <strong>Rentals United</strong> and <strong>PriceLabs APIs</strong> for automatic rental inventory synchronization and dynamic pricing engine execution.</li>
+                    <li>Implemented <strong>PayU pre-authorization payment flows</strong>, handling security deposits, refund states, webhook verifications, and automated receipts.</li>
+                    <li>Integrated <strong>Firebase Authentication</strong>, FCM push notifications, and <strong>WhatsApp Business API</strong> for instant transactional booking alerts.</li>
+                    <li>Optimized SQL queries and database indexes, reducing complex multi-property search query latency by significant margins.</li>
+                    <li>Maintained thorough <strong>OpenAPI / Swagger specifications</strong>, Git/GitHub branches, and automated <strong>Jenkins CI/CD deployment pipelines</strong>.</li>
+                  </ul>
+
+                  <!-- Live Links & API Docs Bento Box -->
+                  <div class="p-3 rounded-3 mt-3" style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle);">
+                    <div class="row g-3">
+                      <div class="col-md-6">
+                        <span class="d-block text-white small fw-bold mb-2"><i class="bi bi-file-code text-primary me-1"></i> Live API Documentation:</span>
+                        <div class="d-flex flex-wrap gap-2">
+                          <a href="https://thebluekite.com/vianaar_api/swagger_vf/doc/swagger.php" target="_blank" class="api-pill">
+                            <i class="bi bi-box-arrow-up-right"></i> Vianaar Swagger
+                          </a>
+                          <a href="https://thebluekite.com/apipartner/api-docs/" target="_blank" class="api-pill">
+                            <i class="bi bi-box-arrow-up-right"></i> Partner API Docs
+                          </a>
+                          <a href="https://thebluekite.com/websiteapi/api-docs/" target="_blank" class="api-pill">
+                            <i class="bi bi-box-arrow-up-right"></i> Website API Docs
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <span class="d-block text-white small fw-bold mb-2"><i class="bi bi-globe text-primary me-1"></i> Production Websites:</span>
+                        <div class="d-flex flex-wrap gap-2">
+                          <a href="https://thebluekite.com" target="_blank" class="api-pill">
+                            <i class="bi bi-link-45deg"></i> thebluekite.com
+                          </a>
+                          <a href="https://thebluekite.com/facilities" target="_blank" class="api-pill">
+                            <i class="bi bi-building"></i> Facilities (FMS)
+                          </a>
+                          <a href="https://thebluekite.com/pms" target="_blank" class="api-pill">
+                            <i class="bi bi-houses"></i> PMS Platform
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Role 2: RSS Infotech -->
+              <div class="timeline-node" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="spotlight-card">
+                  
+                  <div class="job-header">
+                    <div>
+                      <h3 class="job-role">PHP Back-End Developer</h3>
+                      <div class="job-company">RSS Infotech Pvt. Ltd.</div>
+                    </div>
+                    <span class="job-period"><i class="bi bi-calendar3"></i> OCT 2023 – JUN 2024</span>
+                  </div>
+
+                  <ul class="job-bullets">
+                    <li>Engineered complete checkout, cart logic, order fulfillment, and payment gateway workflows for a PHP multi-vendor e-commerce platform in Australia (<em>leatherkart.com.au</em>).</li>
+                    <li>Built dynamic product catalogues, faceted search, attribute filtering, and transactional notification hooks.</li>
+                    <li>Developed full-featured event and wedding reservation portals featuring segregated administrative control panels and customer booking flows.</li>
+                    <li>Constructed <strong>Node.js REST APIs</strong> for an on-demand food delivery platform, connecting React.js frontends with MongoDB backends.</li>
+                    <li>Implemented Core PHP microservices and role-based access control (RBAC) modules for educational client portals.</li>
+                  </ul>
+
+                  <div class="d-flex flex-wrap gap-2 pt-2">
+                    <a href="https://leatherkart.com.au" target="_blank" class="api-pill">
+                      <i class="bi bi-box-arrow-up-right"></i> leatherkart.com.au
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Role 3: Brightcode Software Services -->
+              <div class="timeline-node" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-dot"></div>
+                <div class="spotlight-card">
+                  
+                  <div class="job-header">
+                    <div>
+                      <h3 class="job-role">Junior PHP Developer</h3>
+                      <div class="job-company">Brightcode Software Services Pvt. Ltd.</div>
+                    </div>
+                    <span class="job-period"><i class="bi bi-calendar3"></i> JUL 2022 – JUN 2023</span>
+                  </div>
+
+                  <ul class="job-bullets">
+                    <li>Resolved approximately <strong>50 bugs per sprint</strong> across large-scale Laravel-based social platform modules.</li>
+                    <li>Developed engaging community features including interactive quiz engines, user profile workflows, discussion feeds, and blog engines.</li>
+                    <li>Constructed an automated college admissions portal featuring instant digitally signed certificate generation and integrated payment reconciliation.</li>
+                    <li>Integrated multiple regional payment gateways including <strong>Cashfree, PhonePe, and Roundpay</strong> with secure webhook callbacks.</li>
+                    <li>Designed and implemented custom CMS engines in CodeIgniter and Core PHP with custom permissions and analytics reporting.</li>
+                    <li>Engineered an automated WhatsApp bulk-messaging broadcast pipeline utilizing the official WhatsApp Business API.</li>
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
 
       </div>
+    </section>
 
-    </section><!-- /About Section -->
+    <!-- ==========================================================================
+         Selected Projects Section (Bento Grid Showcase)
+         ========================================================================== -->
+    <section id="projects" class="section-pro">
+      <div class="container">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-layers"></i> Production Portfolio</span>
+          <h2 class="section-heading">Featured Engineering Projects</h2>
+          <p class="section-subtext">
+            High-impact software systems, AI document intelligence, booking engines, and e-commerce platforms.
+          </p>
+        </div>
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section light-background">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row gy-4">
+        <div class="row g-4">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center">
-              <i class="bi bi-clock-history flex-shrink-0"></i>
+          <!-- Project 1: The Blue Kite -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="spotlight-card project-bento-card">
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter">4</span><span>.3+</span>
-                <p><strong>Years Experience</strong> in Production</p>
+                <div class="project-category-tag">Real Estate &bull; Booking Engine &bull; PMS / FMS</div>
+                <div class="project-card-title">
+                  <span>The Blue Kite</span>
+                  <i class="bi bi-buildings text-primary fs-4"></i>
+                </div>
+                <p class="project-description">
+                  Enterprise-grade vacation rental and property management system. Features automated calendar synchronization via Rentals United, real-time dynamic pricing via PriceLabs, homebuyer portals, pre-authorization security payments with PayU, and integrated maintenance ticketing.
+                </p>
+                <div class="tech-stack-row">
+                  <span class="tech-chip">Node.js</span>
+                  <span class="tech-chip">Next.js</span>
+                  <span class="tech-chip">Angular</span>
+                  <span class="tech-chip">Core PHP</span>
+                  <span class="tech-chip">MySQL</span>
+                  <span class="tech-chip">PayU</span>
+                  <span class="tech-chip">Rentals United</span>
+                  <span class="tech-chip">PriceLabs</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://thebluekite.com" target="_blank" class="btn-card-action">
+                  <i class="bi bi-box-arrow-up-right"></i> Live Site
+                </a>
+                <a href="https://thebluekite.com/facilities" target="_blank" class="btn-card-outline">
+                  <i class="bi bi-building"></i> Facilities (FMS)
+                </a>
+                <a href="https://thebluekite.com/pms" target="_blank" class="btn-card-outline">
+                  <i class="bi bi-houses"></i> PMS
+                </a>
+                <a href="https://thebluekite.com/apipartner/api-docs/" target="_blank" class="btn-card-outline">
+                  <i class="bi bi-file-earmark-code"></i> API Docs
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center">
-              <i class="bi bi-hdd-network flex-shrink-0"></i>
+          <!-- Project 2: Nova IDP Studio -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <div class="spotlight-card project-bento-card">
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" class="purecounter">200</span><span>+</span>
-                <p><strong>APIs Built & Maintained</strong> across Platforms</p>
+                <div class="project-category-tag">Artificial Intelligence &bull; Document Automation</div>
+                <div class="project-card-title">
+                  <span>Nova IDP Studio</span>
+                  <i class="bi bi-robot text-primary fs-4"></i>
+                </div>
+                <p class="project-description">
+                  Intelligent Document Processing (IDP) platform built for high-accuracy OCR data extraction, identity verification, schema compliance, and document classification. Powered by robust backend validation pipelines, asynchronous queue processing, and OpenAPI contracts.
+                </p>
+                <div class="tech-stack-row">
+                  <span class="tech-chip">PHP</span>
+                  <span class="tech-chip">AI APIs</span>
+                  <span class="tech-chip">Document Extraction</span>
+                  <span class="tech-chip">OpenAPI / Swagger</span>
+                  <span class="tech-chip">RESTful Architecture</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://idp.girinovax.com" target="_blank" class="btn-card-action">
+                  <i class="bi bi-box-arrow-up-right"></i> Visit Nova IDP Studio
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center">
-              <i class="bi bi-bug flex-shrink-0"></i>
+          <!-- Project 3: GirinovaX Tools -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="spotlight-card project-bento-card">
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="30" data-purecounter-duration="1" class="purecounter">30</span><span>+</span>
-                <p><strong>Bugs Resolved</strong> per Sprint</p>
+                <div class="project-category-tag">Developer Utilities &bull; Media &bull; Security</div>
+                <div class="project-card-title">
+                  <span>GirinovaX Tools</span>
+                  <i class="bi bi-tools text-primary fs-4"></i>
+                </div>
+                <p class="project-description">
+                  High-performance web utility suite for developers and digital creators. Features media encoders, token generators, cryptographic hashing, payload sanitizers, string transformers, and format validators powered by a modular Laravel architecture.
+                </p>
+                <div class="tech-stack-row">
+                  <span class="tech-chip">Laravel</span>
+                  <span class="tech-chip">PHP</span>
+                  <span class="tech-chip">REST APIs</span>
+                  <span class="tech-chip">Utility Tooling</span>
+                  <span class="tech-chip">Bootstrap</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://tools.girinovax.com" target="_blank" class="btn-card-action">
+                  <i class="bi bi-box-arrow-up-right"></i> Explore GirinovaX Tools
+                </a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item d-flex align-items-center">
-              <i class="bi bi-kanban flex-shrink-0"></i>
+          <!-- Project 4: LeatherKart AU -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="spotlight-card project-bento-card">
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter">8</span><span>+</span>
-                <p><strong>Key Enterprise Platforms</strong> Shipped</p>
+                <div class="project-category-tag">Multi-Vendor E-Commerce &bull; Australian Market</div>
+                <div class="project-card-title">
+                  <span>LeatherKart AU</span>
+                  <i class="bi bi-cart3 text-primary fs-4"></i>
+                </div>
+                <p class="project-description">
+                  Production Australian e-commerce platform with multi-vendor support, automated inventory replenishment alerts, multi-tier tax computation, dynamic checkout workflows, and secure payment processing.
+                </p>
+                <div class="tech-stack-row">
+                  <span class="tech-chip">PHP</span>
+                  <span class="tech-chip">CodeIgniter</span>
+                  <span class="tech-chip">MySQL</span>
+                  <span class="tech-chip">Payment Gateways</span>
+                  <span class="tech-chip">Order Workflows</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://leatherkart.com.au" target="_blank" class="btn-card-action">
+                  <i class="bi bi-box-arrow-up-right"></i> Visit LeatherKart AU
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Veeomi -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="spotlight-card project-bento-card">
+              <div>
+                <div class="project-category-tag">Production Platform &bull; Maintenance & Bug Fixing</div>
+                <div class="project-card-title">
+                  <span>Veeomi</span>
+                  <i class="bi bi-gear-wide-connected text-primary fs-4"></i>
+                </div>
+                <p class="project-description">
+                  Continuous production maintenance, backend refactoring, SQL query tuning, and feature expansion for a live enterprise web platform. Ensured zero downtime and sub-second endpoint response times.
+                </p>
+                <div class="tech-stack-row">
+                  <span class="tech-chip">Core PHP</span>
+                  <span class="tech-chip">MySQL</span>
+                  <span class="tech-chip">Backend Refactoring</span>
+                  <span class="tech-chip">Bug Triage</span>
+                  <span class="tech-chip">Performance Optimization</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://veeomi.in" target="_blank" class="btn-card-action">
+                  <i class="bi bi-box-arrow-up-right"></i> Visit Veeomi
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Civic & Organizational Portals -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
+            <div class="spotlight-card project-bento-card">
+              <div>
+                <div class="project-category-tag">Organization & Community Portals</div>
+                <div class="project-card-title">
+                  <span>Civic & Community Portals</span>
+                  <i class="bi bi-people text-primary fs-4"></i>
+                </div>
+                <p class="project-description">
+                  Suite of specialized civic and organizational portals engineered for member enrollment, real-time communications, campaign tracking, and administrative verification. Built with robust role-based access.
+                </p>
+                <div class="tech-stack-row">
+                  <span class="tech-chip">PHP</span>
+                  <span class="tech-chip">MySQL</span>
+                  <span class="tech-chip">REST APIs</span>
+                  <span class="tech-chip">Dynamic Forms</span>
+                  <span class="tech-chip">Responsive UI</span>
+                </div>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://mandal-adhyaksh.in" target="_blank" class="btn-card-outline">
+                  <i class="bi bi-link-45deg"></i> Mandal Adhyaksh
+                </a>
+                <a href="https://chairmen.in" target="_blank" class="btn-card-outline">
+                  <i class="bi bi-link-45deg"></i> Chairmen
+                </a>
+                <a href="https://mission2027.in" target="_blank" class="btn-card-outline">
+                  <i class="bi bi-link-45deg"></i> Mission 2027
+                </a>
               </div>
             </div>
           </div>
 
         </div>
+
       </div>
-    </section><!-- /Stats Section -->
+    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <!-- ==========================================================================
+         Technical Skills Section (Bento Grid + Filter Tabs)
+         ========================================================================== -->
+    <section id="skills" class="section-pro">
+      <div class="container">
+        
+        <div class="text-center mb-4" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-cpu"></i> Capabilities Matrix</span>
+          <h2 class="section-heading">Technical Competencies</h2>
+          <p class="section-subtext">
+            End-to-end capabilities spanning scalable backend architecture, database optimization, cloud DevOps, and AI integrations.
+          </p>
+        </div>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Technical Skills</h2>
-        <p>Comprehensive technical competencies spanning backend architecture, frontend engineering, database optimization, cloud DevOps, AI document processing, and enterprise toolchains.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <!-- Filter Tabs -->
+        <div class="skill-tabs-nav" data-aos="fade-up" data-aos-delay="100">
+          <button class="skill-tab-btn active" data-filter="all">All Domains</button>
+          <button class="skill-tab-btn" data-filter="backend">Backend & APIs</button>
+          <button class="skill-tab-btn" data-filter="frontend">Frontend & UI</button>
+          <button class="skill-tab-btn" data-filter="database">Databases & Cloud</button>
+          <button class="skill-tab-btn" data-filter="ai">AI, Payments & Tools</button>
+        </div>
 
         <!-- Categorized Skills Grid -->
         <div class="row g-4 mb-5">
 
-          <!-- Languages -->
+          <!-- Card: Backend Architecture -->
+          <div class="col-lg-4 col-md-6 skill-category-card" data-category="backend" data-aos="fade-up" data-aos-delay="100">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px;">
+                  <i class="bi bi-server"></i>
+                </div>
+                <h3 class="h6 text-white fw-bold mb-0">Backend Engineering</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-badge-item">Node.js</span>
+                <span class="skill-badge-item">Express.js</span>
+                <span class="skill-badge-item">Nest.js</span>
+                <span class="skill-badge-item">Core PHP</span>
+                <span class="skill-badge-item">Laravel</span>
+                <span class="skill-badge-item">CodeIgniter</span>
+                <span class="skill-badge-item">RESTful API Design</span>
+                <span class="skill-badge-item">Microservices Concepts</span>
+                <span class="skill-badge-item">Event-Driven Architecture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Languages -->
+          <div class="col-lg-4 col-md-6 skill-category-card" data-category="backend" data-aos="fade-up" data-aos-delay="150">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px; background: rgba(6, 182, 212, 0.12); color: #06b6d4; border-color: rgba(6, 182, 212, 0.25);">
+                  <i class="bi bi-terminal"></i>
+                </div>
+                <h3 class="h6 text-white fw-bold mb-0">Languages</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-badge-item">JavaScript (ES6+)</span>
+                <span class="skill-badge-item">TypeScript Concepts</span>
+                <span class="skill-badge-item">PHP 8+</span>
+                <span class="skill-badge-item">SQL / T-SQL</span>
+                <span class="skill-badge-item">HTML5</span>
+                <span class="skill-badge-item">CSS3 / SCSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Frontend -->
+          <div class="col-lg-4 col-md-6 skill-category-card" data-category="frontend" data-aos="fade-up" data-aos-delay="200">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px; background: rgba(168, 85, 247, 0.12); color: #a855f7; border-color: rgba(168, 85, 247, 0.25);">
+                  <i class="bi bi-window-stack"></i>
+                </div>
+                <h3 class="h6 text-white fw-bold mb-0">Frontend Development</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-badge-item">Next.js</span>
+                <span class="skill-badge-item">React.js</span>
+                <span class="skill-badge-item">Angular</span>
+                <span class="skill-badge-item">Bootstrap 5</span>
+                <span class="skill-badge-item">TailwindCSS</span>
+                <span class="skill-badge-item">jQuery / AJAX</span>
+                <span class="skill-badge-item">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Databases -->
+          <div class="col-lg-4 col-md-6 skill-category-card" data-category="database" data-aos="fade-up" data-aos-delay="250">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px; background: rgba(16, 185, 129, 0.12); color: #10b981; border-color: rgba(16, 185, 129, 0.25);">
+                  <i class="bi bi-database"></i>
+                </div>
+                <h3 class="h6 text-white fw-bold mb-0">Databases & Caching</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-badge-item">MySQL</span>
+                <span class="skill-badge-item">MongoDB</span>
+                <span class="skill-badge-item">Query Optimization</span>
+                <span class="skill-badge-item">Composite Indexing</span>
+                <span class="skill-badge-item">Redis Caching</span>
+                <span class="skill-badge-item">Database Profiling</span>
+                <span class="skill-badge-item">Schema Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: Cloud & DevOps -->
+          <div class="col-lg-4 col-md-6 skill-category-card" data-category="database" data-aos="fade-up" data-aos-delay="300">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px; background: rgba(236, 72, 153, 0.12); color: #ec4899; border-color: rgba(236, 72, 153, 0.25);">
+                  <i class="bi bi-cloud-check"></i>
+                </div>
+                <h3 class="h6 text-white fw-bold mb-0">Cloud & DevOps</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-badge-item">AWS EC2 / S3</span>
+                <span class="skill-badge-item">Google Cloud (GCP)</span>
+                <span class="skill-badge-item">Jenkins CI/CD</span>
+                <span class="skill-badge-item">GitHub Actions</span>
+                <span class="skill-badge-item">Docker Containers</span>
+                <span class="skill-badge-item">Linux Administration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card: AI & Integrations -->
+          <div class="col-lg-4 col-md-6 skill-category-card" data-category="ai" data-aos="fade-up" data-aos-delay="350">
+            <div class="spotlight-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <div class="stat-icon" style="width: 44px; height: 44px; font-size: 20px; background: rgba(245, 158, 11, 0.12); color: #f59e0b; border-color: rgba(245, 158, 11, 0.25);">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h3 class="h6 text-white fw-bold mb-0">AI & Integrations</h3>
+              </div>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="skill-badge-item">AI API Integration</span>
+                <span class="skill-badge-item">Document Extraction (IDP)</span>
+                <span class="skill-badge-item">PayU Pre-Auth</span>
+                <span class="skill-badge-item">Cashfree / PhonePe / Roundpay</span>
+                <span class="skill-badge-item">Rentals United & PriceLabs</span>
+                <span class="skill-badge-item">WhatsApp Business API</span>
+                <span class="skill-badge-item">Firebase Auth & FCM</span>
+                <span class="skill-badge-item">Swagger / OpenAPI 3.0</span>
+                <span class="skill-badge-item">Postman & Jira</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Proficiency Progress Levels -->
+        <div class="spotlight-card mt-4" data-aos="fade-up">
+          <h3 class="h5 text-white fw-bold mb-4 text-center">
+            <i class="bi bi-sliders text-primary me-2"></i>Core Engineering Proficiency
+          </h3>
+
+          <div class="row g-4">
+            
+            <div class="col-md-6">
+              <div class="mb-3">
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>REST API Architecture & Swagger/OpenAPI</span>
+                  <span class="text-gradient-cyan">95%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>PHP (Core PHP, Laravel, CodeIgniter)</span>
+                  <span class="text-gradient-cyan">92%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>Payment Gateway Workflows (PayU, Cashfree, PhonePe)</span>
+                  <span class="text-gradient-cyan">92%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>Production Incident Triage & Bug Resolution</span>
+                  <span class="text-gradient-cyan">94%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 94%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="mb-3">
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>Node.js / Express.js / Nest.js</span>
+                  <span class="text-gradient-cyan">90%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>Database Indexing & Query Profiling (MySQL, MongoDB)</span>
+                  <span class="text-gradient-cyan">88%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>Frontend Engineering (Next.js, React, Angular, Tailwind)</span>
+                  <span class="text-gradient-cyan">82%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <div>
+                <div class="d-flex justify-content-between text-white small fw-semibold">
+                  <span>Cloud DevOps (AWS EC2/S3, GCP, Jenkins CI/CD)</span>
+                  <span class="text-gradient-cyan">80%</span>
+                </div>
+                <div class="tech-meter">
+                  <div class="tech-meter-bar" style="width: 80%;"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Key Highlights & Strengths (21st.dev Grid)
+         ========================================================================== -->
+    <section id="highlights" class="section-pro">
+      <div class="container">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-stars"></i> Value Proposition</span>
+          <h2 class="section-heading">Key Engineering Highlights</h2>
+          <p class="section-subtext">
+            Core reasons why senior engineering leaders and high-growth teams value my technical contributions.
+          </p>
+        </div>
+
+        <div class="row g-4">
+
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-terminal"></i></div>
-                <h4>Languages</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap">
+                <i class="bi bi-shield-check"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">JavaScript (ES6+)</span>
-                <span class="skill-badge">PHP</span>
-                <span class="skill-badge">SQL</span>
-                <span class="skill-badge">HTML5</span>
-                <span class="skill-badge">CSS3</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">4.3+ Years Production</h3>
+              <p class="text-secondary small mb-0">
+                Battle-tested experience designing, deploying, and maintaining high-availability web applications and microservices.
+              </p>
             </div>
           </div>
 
-          <!-- Backend -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="150">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-server"></i></div>
-                <h4>Backend</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(6, 182, 212, 0.12); color: #06b6d4; border-color: rgba(6, 182, 212, 0.25);">
+                <i class="bi bi-cpu"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">Node.js</span>
-                <span class="skill-badge">Express.js</span>
-                <span class="skill-badge">Nest.js</span>
-                <span class="skill-badge">Core PHP</span>
-                <span class="skill-badge">Laravel</span>
-                <span class="skill-badge">CodeIgniter</span>
-                <span class="skill-badge">REST API Development</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">200+ Production APIs</h3>
+              <p class="text-secondary small mb-0">
+                Engineered robust, documented REST APIs powering booking engines, partner sync, dynamic pricing, and mobile clients.
+              </p>
             </div>
           </div>
 
-          <!-- Frontend -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-window-stack"></i></div>
-                <h4>Frontend</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(16, 185, 129, 0.12); color: #10b981; border-color: rgba(16, 185, 129, 0.25);">
+                <i class="bi bi-lightning-charge"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">Next.js</span>
-                <span class="skill-badge">React.js</span>
-                <span class="skill-badge">Angular</span>
-                <span class="skill-badge">HTML5 / CSS3</span>
-                <span class="skill-badge">jQuery</span>
-                <span class="skill-badge">AJAX</span>
-                <span class="skill-badge">Bootstrap 5</span>
-                <span class="skill-badge">TailwindCSS</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Rapid Bug Triage</h3>
+              <p class="text-secondary small mb-0">
+                Consistently resolve 30+ to 50+ bugs per sprint across Node.js, Next.js, Angular, Laravel, and Core PHP stacks.
+              </p>
             </div>
           </div>
 
-          <!-- Databases -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-database"></i></div>
-                <h4>Databases</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(236, 72, 153, 0.12); color: #ec4899; border-color: rgba(236, 72, 153, 0.25);">
+                <i class="bi bi-credit-card-2-front"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">MySQL</span>
-                <span class="skill-badge">MongoDB</span>
-                <span class="skill-badge">RDBMS</span>
-                <span class="skill-badge">Query Optimization</span>
-                <span class="skill-badge">Database Indexing</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Multi-Gateway Payments</h3>
+              <p class="text-secondary small mb-0">
+                End-to-end integration of PayU pre-auth holds, Cashfree, PhonePe, and Roundpay with cryptographic webhook verification.
+              </p>
             </div>
           </div>
 
-          <!-- Architecture & Design -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-diagram-3"></i></div>
-                <h4>Architecture</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(245, 158, 11, 0.12); color: #f59e0b; border-color: rgba(245, 158, 11, 0.25);">
+                <i class="bi bi-speedometer2"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">REST API Design</span>
-                <span class="skill-badge">MVC Architecture</span>
-                <span class="skill-badge">Microservices Concepts</span>
-                <span class="skill-badge">Event-Driven Architecture</span>
-                <span class="skill-badge">System Design</span>
-                <span class="skill-badge">Redis Caching</span>
-                <span class="skill-badge">OAuth 2.0</span>
-                <span class="skill-badge">RBAC</span>
-                <span class="skill-badge">Authentication</span>
-                <span class="skill-badge">TDD</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Database Indexing</h3>
+              <p class="text-secondary small mb-0">
+                Optimized complex relational joins, added composite indices, and reduced expensive query bottlenecks in MySQL and MongoDB.
+              </p>
             </div>
           </div>
 
-          <!-- Cloud & DevOps -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="350">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-cloud-check"></i></div>
-                <h4>Cloud & DevOps</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(168, 85, 247, 0.12); color: #a855f7; border-color: rgba(168, 85, 247, 0.25);">
+                <i class="bi bi-robot"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">AWS EC2 / S3</span>
-                <span class="skill-badge">GCP</span>
-                <span class="skill-badge">Jenkins CI/CD</span>
-                <span class="skill-badge">GitHub Actions</span>
-                <span class="skill-badge">Docker</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">AI API Integration</h3>
+              <p class="text-secondary small mb-0">
+                Architected intelligent document extraction (IDP) pipelines with automated identity validation and OCR mapping.
+              </p>
             </div>
           </div>
 
-          <!-- AI & Integrations -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-cpu"></i></div>
-                <h4>AI & Integrations</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(59, 130, 246, 0.12); color: #3b82f6; border-color: rgba(59, 130, 246, 0.25);">
+                <i class="bi bi-cloud-arrow-up"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">AI API Integration</span>
-                <span class="skill-badge">AI Document Processing</span>
-                <span class="skill-badge">PayU</span>
-                <span class="skill-badge">Cashfree</span>
-                <span class="skill-badge">PhonePe</span>
-                <span class="skill-badge">Roundpay</span>
-                <span class="skill-badge">WhatsApp Business API</span>
-                <span class="skill-badge">Firebase Auth / FCM</span>
-                <span class="skill-badge">Rentals United</span>
-                <span class="skill-badge">PriceLabs</span>
-              </div>
+              <h3 class="h6 text-white fw-bold mb-2">Cloud & CI/CD</h3>
+              <p class="text-secondary small mb-0">
+                Provisioned AWS EC2/S3, configured GCP services, automated Jenkins releases, and set up continuous GitHub Actions.
+              </p>
             </div>
           </div>
 
-          <!-- Tools & Practices -->
           <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="450">
-            <div class="skill-card">
-              <div class="skill-card-header">
-                <div class="skill-card-icon"><i class="bi bi-tools"></i></div>
-                <h4>Tools & Practices</h4>
+            <div class="spotlight-card h-100">
+              <div class="strength-icon-wrap" style="background: rgba(20, 184, 166, 0.12); color: #14b8a6; border-color: rgba(20, 184, 166, 0.25);">
+                <i class="bi bi-file-earmark-check"></i>
               </div>
-              <div class="skill-badges-container">
-                <span class="skill-badge">Git & GitHub</span>
-                <span class="skill-badge">Jira</span>
-                <span class="skill-badge">Postman</span>
-                <span class="skill-badge">Swagger / OpenAPI</span>
-                <span class="skill-badge">Release Management</span>
-                <span class="skill-badge">Code Review</span>
-                <span class="skill-badge">Incident Triage</span>
-                <span class="skill-badge">Production Support</span>
+              <h3 class="h6 text-white fw-bold mb-2">Swagger & OpenAPI</h3>
+              <p class="text-secondary small mb-0">
+                Authored complete, interactive API documentation suites ensuring clean contracts for partner integrations.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Education & Academics Section
+         ========================================================================== -->
+    <section id="education" class="section-pro">
+      <div class="container">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-mortarboard"></i> Academic Background</span>
+          <h2 class="section-heading">Education & Qualifications</h2>
+          <p class="section-subtext">
+            Strong foundational computer science degree and advanced master coursework.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          
+          <!-- MCA -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="spotlight-card h-100">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <h3 class="h5 text-white fw-bold mb-1">Master of Computer Applications (MCA)</h3>
+                  <div class="text-gradient-cyan fw-semibold">Mangalayatan University</div>
+                </div>
+                <span class="job-period">Jan 2024</span>
+              </div>
+              <p class="text-secondary small mb-0">
+                Specialized in Advanced Distributed Systems, Database Management Systems (RDBMS & NoSQL), Object-Oriented Architecture, and Enterprise Software Engineering Methodologies.
+              </p>
+            </div>
+          </div>
+
+          <!-- BCA -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="spotlight-card h-100">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div>
+                  <h3 class="h5 text-white fw-bold mb-1">Bachelor of Computer Applications (BCA)</h3>
+                  <div class="text-gradient-cyan fw-semibold">RKDF University, Ranchi</div>
+                </div>
+                <span class="job-period">Jan 2022</span>
+              </div>
+              <p class="text-secondary small mb-1">
+                Graduated with <strong>67.36%</strong> score. Core coursework in Data Structures, Algorithm Design, C++, Java, Web Technologies, and Relational Database Engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- 12th & 10th Mini Cards -->
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="spotlight-card py-3 px-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="h6 text-white fw-bold mb-0">Senior Secondary (12th) &bull; 77%</h4>
+                  <span class="text-muted small">BN Collegiate School, Patna</span>
+                </div>
+                <span class="text-muted small font-monospace">July 2019</span>
               </div>
             </div>
           </div>
 
-        </div><!-- /Categorized Skills Grid -->
-
-        <!-- Proficiency Progress Bars -->
-        <h3 class="mb-4 text-center fw-bold" style="font-size: 22px;">Core Proficiency Levels</h3>
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Node.js / Express.js / Nest.js</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>PHP (Core PHP, Laravel, CodeIgniter)</span> <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>REST API Architecture & OpenAPI / Swagger</span> <i class="val">95%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Database Indexing & Query Optimization (MySQL, MongoDB)</span> <i class="val">88%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="progress">
-              <span class="skill"><span>Frontend (Next.js, React.js, Angular, Bootstrap, Tailwind)</span> <i class="val">82%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Third-Party & Payment Integrations (PayU, Cashfree, PhonePe, Rentals United)</span> <i class="val">92%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Cloud & DevOps (AWS EC2/S3, GCP, Jenkins CI/CD, GitHub Actions)</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill"><span>Production Support, Incident Triage & Bug Resolution</span> <i class="val">94%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="spotlight-card py-3 px-4">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h4 class="h6 text-white fw-bold mb-0">Secondary School (10th) &bull; 77%</h4>
+                  <span class="text-muted small">Narayanpur High School, Bhagalpur</span>
+                </div>
+                <span class="text-muted small font-monospace">July 2017</span>
               </div>
             </div>
           </div>
@@ -640,541 +1201,207 @@
         </div>
 
       </div>
+    </section>
 
-    </section><!-- /Skills Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>A comprehensive summary of my professional experience, engineering achievements, educational background, and technical milestones.</p>
-      </div><!-- End Section Title -->
-
+    <!-- ==========================================================================
+         Contact Section
+         ========================================================================== -->
+    <section id="contact" class="section-pro">
       <div class="container">
-        <div class="row">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="section-tag"><i class="bi bi-chat-square-dots"></i> Get In Touch</span>
+          <h2 class="section-heading">Let's Connect & Collaborate</h2>
+          <p class="section-subtext">
+            Open for high-impact software engineering opportunities, backend architecture challenges, and technical leadership roles.
+          </p>
+        </div>
 
-          <!-- Left Column: Summary & Education -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4">
+          
+          <!-- Contact Options Left -->
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
+            
+            <div class="d-flex flex-column gap-3 mb-4">
+              
+              <!-- Email Card -->
+              <div class="contact-card-item">
+                <div class="contact-icon">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="text-muted small">Email Address</div>
+                  <div class="text-white fw-semibold">shivamkcv@gmail.com</div>
+                  <button class="copy-pill-btn" data-copy="shivamkcv@gmail.com">
+                    <i class="bi bi-clipboard"></i> Copy Email
+                  </button>
+                </div>
+              </div>
 
-            <!-- Summary -->
-            <h3 class="resume-title">Executive Summary</h3>
-            <div class="resume-item pb-0">
-              <h4>Shivam Kumar</h4>
-              <p>
-                <em>
-                  Backend-focused Software Development Engineer with 4.3 years of professional experience building and maintaining production-grade web applications, REST APIs, booking platforms, payment workflows, and third-party integrations. Strong hands-on experience with Node.js, JavaScript, PHP, Laravel, CodeIgniter, Nest.js, Next.js, React.js, and Angular. Experienced in backend development and debugging, database optimization, external API integrations, and customer-facing real-estate and facility-management platforms. Proficient in AWS, GCP, Git, GitHub, Jira, Swagger/OpenAPI, Jenkins CI/CD, and AI integration.
-                </em>
-              </p>
-              <ul>
-                <li><strong>Location:</strong> Delhi, India</li>
-                <li><strong>Phone:</strong> <a href="tel:+919472774549">+91 9472774549</a></li>
-                <li><strong>Email:</strong> <a href="mailto:shivamkcv@gmail.com">shivamkcv@gmail.com</a></li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank">linkedin.com/in/shivam-kumar-747973204</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/Shivam-poddar66" target="_blank">github.com/Shivam-poddar66</a></li>
-              </ul>
-            </div><!-- End Summary -->
-
-            <!-- Education -->
-            <h3 class="resume-title">Education</h3>
-
-            <div class="resume-item">
-              <h4>Master of Computer Applications (MCA)</h4>
-              <h5>Jan 2024</h5>
-              <p><em>Mangalayatan University</em></p>
-              <p>Specialization in Advanced Computer Applications, Distributed Computing, Database Management Systems, and Software Engineering Methodologies.</p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Bachelor of Computer Applications (BCA)</h4>
-              <h5>Jan 2022</h5>
-              <p><em>RKDF University, Ranchi</em></p>
-              <p>Graduated with <strong>67.36%</strong>. Core coursework in Data Structures, Object-Oriented Programming, Database Systems, Web Technologies, and Algorithm Design.</p>
-            </div>
-
-            <div class="resume-item">
-              <h4>12th (Senior Secondary)</h4>
-              <h5>July 2019</h5>
-              <p><em>BN Collegiate School, Patna</em></p>
-              <p>Completed with <strong>77%</strong> score.</p>
-            </div>
-
-            <div class="resume-item">
-              <h4>10th (Secondary School)</h4>
-              <h5>July 2017</h5>
-              <p><em>Narayanpur High School, Bhagalpur, Bihar</em></p>
-              <p>Completed with <strong>77%</strong> score.</p>
-            </div>
-
-            <!-- Key Professional Strengths Box -->
-            <div class="p-3 mt-4 bg-white rounded border shadow-sm">
-              <h5 class="fw-bold text-dark mb-2"><i class="bi bi-award-fill text-primary me-2"></i>Key Professional Strengths</h5>
-              <p class="mb-0 text-muted" style="font-size: 13.5px; line-height: 1.6;">
-                4.3 years of professional experience &bull; 200+ APIs &bull; Node.js/PHP backend development &bull; Production real-estate, PMS/FMS, e-commerce and payment systems &bull; AWS/GCP &bull; AI integration &bull; Git/GitHub/Jira &bull; Swagger/OpenAPI &bull; Jenkins CI/CD &bull; Production debugging and API optimization.
-              </p>
-            </div>
-
-          </div>
-
-          <!-- Right Column: Professional Experience -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <!-- SDE 2: Vianaar Home PVT LTD -->
-            <div class="resume-item">
-              <h4>Software Development Engineer 2 (SDE 2)</h4>
-              <h5>JUL 2024 – PRESENT</h5>
-              <p><em>Vianaar Home PVT LTD | thebluekite.com</em></p>
-              <ul>
-                <li>Develop and maintain Node.js REST APIs powering homebuyer journeys, property workflows, bookings, payments, dashboards, and account operations.</li>
-                <li>Develop, maintain, and enhance <strong>200+ APIs</strong> supporting customer-facing applications, PMS, FMS, booking workflows, and internal business operations.</li>
-                <li>Resolve <strong>30+ API bugs per sprint</strong> across Node.js, Next.js, Angular, and Core PHP workflows.</li>
-                <li>Build and enhance The Blue Kite Property Management System (PMS) and Facility Management System (FMS).</li>
-                <li>Integrate Rentals United and PriceLabs APIs for rental inventory synchronization and dynamic pricing workflows.</li>
-                <li>Implement PayU pre-authorization payment flows and integrate Firebase Authentication, FCM, and WhatsApp Business API.</li>
-                <li>Improve API response times through database indexing, query optimization, and backend refactoring.</li>
-                <li>Maintain Swagger/OpenAPI documentation and manage Git/GitHub source control and Jenkins CI/CD releases.</li>
-                <li>Use Jira for issue tracking, sprint planning, task management, and development coordination.</li>
-              </ul>
-
-              <!-- Live Links & API Docs -->
-              <div class="mt-3 p-3 bg-white rounded border">
-                <div class="mb-2">
-                  <span class="fw-bold text-dark d-block" style="font-size: 13px;"><i class="bi bi-file-code-fill text-primary me-1"></i> API Documentation:</span>
-                  <div class="d-flex flex-wrap mt-1">
-                    <a href="https://thebluekite.com/vianaar_api/swagger_vf/doc/swagger.php" target="_blank" class="api-badge-link"><i class="bi bi-filetype-doc"></i> Vianaar Swagger</a>
-                    <a href="https://thebluekite.com/apipartner/api-docs/" target="_blank" class="api-badge-link"><i class="bi bi-box-arrow-up-right"></i> Partner API Docs</a>
-                    <a href="https://thebluekite.com/websiteapi/api-docs/" target="_blank" class="api-badge-link"><i class="bi bi-code-slash"></i> Website API Docs</a>
+              <!-- Phone / WhatsApp Card -->
+              <div class="contact-card-item">
+                <div class="contact-icon" style="background: rgba(16, 185, 129, 0.12); color: #10b981;">
+                  <i class="bi bi-whatsapp"></i>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="text-muted small">Direct Phone / WhatsApp</div>
+                  <div class="text-white fw-semibold">+91 9472774549</div>
+                  <div class="d-flex gap-2">
+                    <button class="copy-pill-btn" data-copy="+919472774549">
+                      <i class="bi bi-clipboard"></i> Copy
+                    </button>
+                    <a href="https://wa.me/919472774549" target="_blank" class="copy-pill-btn" style="text-decoration: none;">
+                      <i class="bi bi-chat"></i> Chat
+                    </a>
                   </div>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card-item">
+                <div class="contact-icon" style="background: rgba(6, 182, 212, 0.12); color: #06b6d4;">
+                  <i class="bi bi-geo-alt"></i>
                 </div>
                 <div>
-                  <span class="fw-bold text-dark d-block" style="font-size: 13px;"><i class="bi bi-globe2 text-primary me-1"></i> Production Websites:</span>
-                  <div class="d-flex flex-wrap mt-1">
-                    <a href="https://thebluekite.com" target="_blank" class="api-badge-link"><i class="bi bi-link-45deg"></i> thebluekite.com</a>
-                    <a href="https://thebluekite.com/facilities" target="_blank" class="api-badge-link"><i class="bi bi-building"></i> Facilities (FMS)</a>
-                    <a href="https://thebluekite.com/pms" target="_blank" class="api-badge-link"><i class="bi bi-houses"></i> PMS Platform</a>
+                  <div class="text-muted small">Location</div>
+                  <div class="text-white fw-semibold">Delhi, India</div>
+                  <span class="badge bg-dark border border-secondary text-light mt-1">Open to Relocation / Remote</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Media Buttons -->
+            <div class="spotlight-card p-3 text-center">
+              <span class="text-muted small d-block mb-3">Connect on Professional Networks</span>
+              <div class="d-flex justify-content-center gap-3">
+                <a href="https://github.com/Shivam-poddar66" target="_blank" class="footer-social-link" title="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank" class="footer-social-link" title="LinkedIn">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://wa.me/919472774549" target="_blank" class="footer-social-link" title="WhatsApp">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://x.com/shivamnnr?t=xtCbCu-QwPgc160fN8nEdw&s=09" target="_blank" class="footer-social-link" title="Twitter / X">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+                <a href="mailto:shivamkcv@gmail.com" class="footer-social-link" title="Email Direct">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Direct Message Form & Map -->
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+            <div class="spotlight-card h-100">
+              
+              <h3 class="h5 text-white fw-bold mb-2 d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <span><i class="bi bi-whatsapp text-success me-2"></i>Send Direct Message</span>
+                <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-50 small font-monospace py-1 px-2">
+                  <i class="bi bi-lightning-charge-fill me-1"></i>Delivered via WhatsApp
+                </span>
+              </h3>
+              <p class="text-secondary small mb-3">
+                Submit this form to instantly dispatch your message directly to Shivam's WhatsApp.
+              </p>
+
+              <form id="whatsapp-contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label text-muted small">Your Name</label>
+                    <input type="text" id="wa-name" name="name" class="form-control-pro" placeholder="e.g. Alex Morgan" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-muted small">Your Email / Company</label>
+                    <input type="text" id="wa-email" name="email" class="form-control-pro" placeholder="alex@company.com" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small">Subject / Role Purpose</label>
+                    <input type="text" id="wa-subject" name="subject" class="form-control-pro" placeholder="Opportunity: SDE 2 / Backend Engineering" required>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-muted small">Your Message</label>
+                    <textarea id="wa-message" name="message" rows="4" class="form-control-pro" placeholder="Hi Shivam, we came across your work on The Blue Kite and Nova IDP Studio..." required></textarea>
+                  </div>
+                  <div class="col-12 text-end pt-2">
+                    <button type="submit" class="btn-primary-glow w-100 justify-content-center" style="background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%); border-color: rgba(52, 211, 153, 0.4); box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);">
+                      <i class="bi bi-whatsapp fs-5"></i> Send via WhatsApp
+                    </button>
                   </div>
                 </div>
+              </form>
+
+              <!-- Interactive Google Map Frame -->
+              <div class="mt-4 pt-3 border-top border-secondary border-opacity-10">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54004883842!2d77.04417347155065!3d28.52725273882469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1737259257277!5m2!1sen!2sin" width="100%" height="180" style="border:0; border-radius: 12px; filter: invert(90%) hue-rotate(180deg) brightness(85%) contrast(110%);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
 
-            </div><!-- End SDE 2 -->
-
-            <!-- RSS Infotech -->
-            <div class="resume-item">
-              <h4>PHP Back-End Developer</h4>
-              <h5>OCT 2023 – JUN 2024</h5>
-              <p><em>RSS Infotech Pvt. Ltd.</em></p>
-              <ul>
-                <li>Built full checkout and order workflows for a PHP multi-vendor e-commerce platform serving an Australian client (leatherkart.com.au).</li>
-                <li>Developed product catalogue, search, filtering, cart, checkout, and order-management functionality.</li>
-                <li>Developed event and wedding booking systems with separate admin and end-user workflows.</li>
-                <li>Built Node.js REST APIs for a food-delivery platform integrated with React.js and MongoDB.</li>
-                <li>Created Core PHP APIs for an education platform and role-based CMS modules.</li>
-                <li>Developed backend business logic, dynamic forms, API integrations, and database-driven workflows.</li>
-              </ul>
-            </div><!-- End RSS Infotech -->
-
-            <!-- Brightcode Software Services -->
-            <div class="resume-item">
-              <h4>Junior PHP Developer</h4>
-              <h5>JUL 2022 – JUN 2023</h5>
-              <p><em>Brightcode Software Services Pvt. Ltd.</em></p>
-              <ul>
-                <li>Resolved approximately <strong>50 bugs per sprint</strong> across Laravel-based social-platform features.</li>
-                <li>Developed Laravel social-platform functionality including profiles, posts, blogs, quizzes, and interactive features.</li>
-                <li>Built a college admission portal with automated certificate generation and integrated payment processing.</li>
-                <li>Integrated Cashfree, PhonePe, and Roundpay payment gateways.</li>
-                <li>Created Core PHP APIs for an education platform and role-based CMS modules.</li>
-                <li>Developed custom CMS platforms using CodeIgniter and Core PHP, including admin panels and frontend integrations.</li>
-                <li>Developed a WhatsApp bulk-messaging system using the WhatsApp Business API.</li>
-              </ul>
-            </div><!-- End Brightcode -->
-
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio / Selected Projects Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Selected Projects</h2>
-        <p>A showcase of production-grade platforms, AI document workflows, real-estate booking platforms, multi-vendor e-commerce systems, and enterprise portals engineered throughout my career.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <!-- Project: The Blue Kite -->
-          <div class="col-lg-6 col-md-12">
-            <div class="project-card">
-              <div>
-                <div class="project-category">Real Estate &bull; Booking Engine &bull; PMS / FMS</div>
-                <h4>The Blue Kite</h4>
-                <p>
-                  Production real-estate booking and payments platform with Property Management System (PMS), Facility Management System (FMS), homebuyer customer workflows, and external partner APIs. Integrated with dynamic pricing and rental inventory synchronization.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-pill">Node.js</span>
-                  <span class="tech-pill">Next.js</span>
-                  <span class="tech-pill">Angular</span>
-                  <span class="tech-pill">Core PHP</span>
-                  <span class="tech-pill">REST APIs</span>
-                  <span class="tech-pill">MySQL</span>
-                  <span class="tech-pill">PayU</span>
-                  <span class="tech-pill">Rentals United</span>
-                  <span class="tech-pill">PriceLabs</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://thebluekite.com" target="_blank" class="btn-project"><i class="bi bi-box-arrow-up-right"></i> Live Site</a>
-                <a href="https://thebluekite.com/facilities" target="_blank" class="btn-project-outline"><i class="bi bi-building"></i> Facilities</a>
-                <a href="https://thebluekite.com/pms" target="_blank" class="btn-project-outline"><i class="bi bi-houses"></i> PMS</a>
-                <a href="https://thebluekite.com/apipartner/api-docs/" target="_blank" class="btn-project-outline"><i class="bi bi-file-earmark-code"></i> API Docs</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: Nova IDP Studio -->
-          <div class="col-lg-6 col-md-12">
-            <div class="project-card">
-              <div>
-                <div class="project-category">Artificial Intelligence &bull; Document Automation</div>
-                <h4>Nova IDP Studio</h4>
-                <p>
-                  AI-powered Intelligent Document Processing (IDP) platform workflows for automated identity-document extraction, validation, OCR data mapping, and schema compliance. Engineered with scalable backend APIs and OpenAPI documentation.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-pill">PHP</span>
-                  <span class="tech-pill">AI APIs</span>
-                  <span class="tech-pill">Document Extraction</span>
-                  <span class="tech-pill">OpenAPI / Swagger</span>
-                  <span class="tech-pill">RESTful Architecture</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://idp.girinovax.com" target="_blank" class="btn-project"><i class="bi bi-box-arrow-up-right"></i> Visit Nova IDP Studio</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: GirinovaX Tools -->
-          <div class="col-lg-6 col-md-12">
-            <div class="project-card">
-              <div>
-                <div class="project-category">Developer Utilities &bull; Media &bull; Security</div>
-                <h4>GirinovaX Tools</h4>
-                <p>
-                  A versatile collection of developer tools, data processing utilities, text transformations, media encoders, security checkers, and utility web services built with high-performance Laravel backend architecture.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-pill">Laravel</span>
-                  <span class="tech-pill">PHP</span>
-                  <span class="tech-pill">REST APIs</span>
-                  <span class="tech-pill">Utility Tooling</span>
-                  <span class="tech-pill">Bootstrap</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://tools.girinovax.com" target="_blank" class="btn-project"><i class="bi bi-box-arrow-up-right"></i> Explore GirinovaX Tools</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: LeatherKart AU -->
-          <div class="col-lg-6 col-md-12">
-            <div class="project-card">
-              <div>
-                <div class="project-category">Multi-Vendor E-Commerce &bull; Australian Market</div>
-                <h4>LeatherKart AU</h4>
-                <p>
-                  Australian e-commerce platform featuring an extensive product catalogue, dynamic search & filtering, real-time cart handling, full checkout flow, order-management workflows, and secure payment processing.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-pill">PHP</span>
-                  <span class="tech-pill">CodeIgniter</span>
-                  <span class="tech-pill">MySQL</span>
-                  <span class="tech-pill">Payment Gateways</span>
-                  <span class="tech-pill">Order Workflows</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://leatherkart.com.au" target="_blank" class="btn-project"><i class="bi bi-box-arrow-up-right"></i> Visit LeatherKart AU</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project: Veeomi -->
-          <div class="col-lg-6 col-md-12">
-            <div class="project-card">
-              <div>
-                <div class="project-category">Production Platform &bull; Maintenance & Bug Fixing</div>
-                <h4>Veeomi</h4>
-                <p>
-                  Live Core PHP platform involving continuous production maintenance, backend logic development, critical bug fixing, performance tuning, and new workflow enhancements.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-pill">Core PHP</span>
-                  <span class="tech-pill">MySQL</span>
-                  <span class="tech-pill">Backend Refactoring</span>
-                  <span class="tech-pill">Bug Triage</span>
-                  <span class="tech-pill">Optimization</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://veeomi.in" target="_blank" class="btn-project"><i class="bi bi-box-arrow-up-right"></i> Visit Veeomi</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Additional Projects: Mandal Adhyaksh, Chairmen, Mission 2027 -->
-          <div class="col-lg-6 col-md-12">
-            <div class="project-card">
-              <div>
-                <div class="project-category">Organization & Community Portals</div>
-                <h4>Civic & Organizational Portals</h4>
-                <p>
-                  Suite of specialized production platforms built for organizational administration, community engagement, member registration, and campaign outreach workflows.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-pill">PHP</span>
-                  <span class="tech-pill">MySQL</span>
-                  <span class="tech-pill">REST APIs</span>
-                  <span class="tech-pill">Dynamic Forms</span>
-                  <span class="tech-pill">Responsive UI</span>
-                </div>
-              </div>
-              <div class="project-links">
-                <a href="https://mandal-adhyaksh.in" target="_blank" class="btn-project-outline"><i class="bi bi-link-45deg"></i> Mandal Adhyaksh</a>
-                <a href="https://chairmen.in" target="_blank" class="btn-project-outline"><i class="bi bi-link-45deg"></i> Chairmen</a>
-                <a href="https://mission2027.in" target="_blank" class="btn-project-outline"><i class="bi bi-link-45deg"></i> Mission 2027</a>
-              </div>
             </div>
           </div>
 
         </div>
 
       </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Key Highlights / Strengths Section -->
-    <section id="highlights" class="skills section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Key Highlights & Strengths</h2>
-        <p>Core engineering strengths and high-impact accomplishments that define my contribution to production engineering teams.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row g-4">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="strength-card">
-              <h5><i class="bi bi-check-circle-fill text-primary"></i> 4.3 Years of Professional Experience</h5>
-              <p>Extensive experience engineering, scaling, and maintaining production-grade web applications, booking platforms, and microservices concepts.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <div class="strength-card">
-              <h5><i class="bi bi-cpu-fill text-primary"></i> 200+ Production REST APIs</h5>
-              <p>Designed and maintained 200+ robust APIs powering homebuyer apps, PMS, FMS, booking flows, dynamic pricing, and external partner systems.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="strength-card">
-              <h5><i class="bi bi-lightning-charge-fill text-primary"></i> Rapid Incident Triage & Bug Resolution</h5>
-              <p>Consistently resolve 30+ to 50+ bugs per sprint across Node.js, Next.js, Angular, Laravel, and Core PHP production codebases.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-            <div class="strength-card">
-              <h5><i class="bi bi-credit-card-2-front-fill text-primary"></i> Multi-Gateway Payment Workflows</h5>
-              <p>Hands-on implementation of PayU pre-authorization holds, Cashfree, PhonePe, and Roundpay checkout flows with webhook verification.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="strength-card">
-              <h5><i class="bi bi-speedometer2 text-primary"></i> Database Indexing & Query Optimization</h5>
-              <p>Significantly reduced API response times through MySQL/MongoDB query profiling, schema indexing, backend refactoring, and caching.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350">
-            <div class="strength-card">
-              <h5><i class="bi bi-robot text-primary"></i> AI API Integration & IDP Systems</h5>
-              <p>Integrated cutting-edge AI APIs for identity-document processing (Nova IDP Studio), OCR extraction, and automated document validation.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="strength-card">
-              <h5><i class="bi bi-cloud-arrow-up-fill text-primary"></i> Cloud & DevOps Automation</h5>
-              <p>Configured AWS (EC2, S3), GCP, Jenkins CI/CD automated deployment pipelines, and GitHub Actions for continuous delivery.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="450">
-            <div class="strength-card">
-              <h5><i class="bi bi-file-earmark-check-fill text-primary"></i> Swagger / OpenAPI Documentation</h5>
-              <p>Documented comprehensive public and internal API suites using Swagger and OpenAPI specifications, ensuring clear partner onboarding.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </section><!-- /Key Highlights Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for high-impact software engineering roles, technical consultations, API architecture discussions, or collaboration opportunities.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-12">
-
-            <div class="info-wrap">
-
-              <div class="row g-4 mb-4">
-
-                <div class="col-md-6 col-lg-3">
-                  <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                      <h3>Location</h3>
-                      <p>Delhi, India</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                  <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div>
-                      <h3>Call Me</h3>
-                      <p><a href="tel:+919472774549">+91 9472774549</a></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                  <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div>
-                      <h3>Email Me</h3>
-                      <p><a href="mailto:shivamkcv@gmail.com">shivamkcv@gmail.com</a></p>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                  <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
-                    <i class="bi bi-whatsapp flex-shrink-0"></i>
-                    <div>
-                      <h3>WhatsApp</h3>
-                      <p><a href="https://wa.me/919472774549" target="_blank">Chat on WhatsApp</a></p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="row g-3 mb-4 text-center">
-                <div class="col-12">
-                  <div class="d-inline-flex flex-wrap gap-2 justify-content-center">
-                    <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank" class="btn btn-outline-primary px-3 py-2 rounded-pill">
-                      <i class="bi bi-linkedin me-1"></i> LinkedIn Profile
-                    </a>
-                    <a href="https://github.com/Shivam-poddar66" target="_blank" class="btn btn-outline-dark px-3 py-2 rounded-pill">
-                      <i class="bi bi-github me-1"></i> GitHub Profile
-                    </a>
-                    <a href="mailto:shivamkcv@gmail.com" class="btn btn-primary px-3 py-2 rounded-pill" style="background: var(--accent-color); border: none;">
-                      <i class="bi bi-envelope-fill me-1"></i> Send Direct Email
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.54004883842!2d77.04417347155065!3d28.52725273882469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1737259257277!5m2!1sen!2sin" width="100%" height="280" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer id="footer" class="footer position-relative light-background">
-
+  <!-- ==========================================================================
+       Footer Section (21st.dev Sleek Dark Footer)
+       ========================================================================== -->
+  <footer class="footer-pro">
     <div class="container">
-      <div class="row align-items-center">
-        <!-- Left side: Copyright -->
-        <div class="col-12 col-md-6 text-center text-md-start">
-          <p class="mb-0 fw-bold">&copy; 2025 Shivam Kumar. All Rights Reserved.</p>
-          <small class="text-muted">Software Development Engineer 2 &bull; Backend-Focused Full Stack Developer</small>
+      <div class="row align-items-center gy-3">
+        
+        <div class="col-md-6 text-center text-md-start">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-start gap-2 mb-1">
+            <span class="text-white fw-bold">Shivam Kumar</span>
+            <span class="text-muted small">&bull;</span>
+            <span class="text-gradient-cyan small font-monospace">SDE 2</span>
+          </div>
+          <p class="text-muted small mb-0">
+            &copy; 2026 Shivam Kumar. Designed with 21st.dev UI/UX aesthetic, motion & glassmorphism.
+          </p>
         </div>
-        <!-- Right side: Social Media Links -->
-        <div class="col-12 col-md-6 text-center text-md-end mt-3 mt-md-0">
-          <div class="d-inline-flex gap-3 justify-content-center">
-            <a href="https://github.com/Shivam-poddar66" class="text-secondary" target="_blank" title="GitHub" style="font-size: 20px;"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" class="text-secondary" target="_blank" title="LinkedIn" style="font-size: 20px;"><i class="bi bi-linkedin"></i></a>
-            <a href="https://wa.me/919472774549" class="text-secondary" target="_blank" title="WhatsApp" style="font-size: 20px;"><i class="bi bi-whatsapp"></i></a>
-            <a href="mailto:shivamkcv@gmail.com" class="text-secondary" title="Email" style="font-size: 20px;"><i class="bi bi-envelope-fill"></i></a>
-            <a href="https://x.com/shivamnnr?t=xtCbCu-QwPgc160fN8nEdw&s=09" class="text-secondary" target="_blank" title="Twitter/X" style="font-size: 20px;"><i class="bi bi-twitter-x"></i></a>
+
+        <div class="col-md-6 text-center text-md-end">
+          <div class="d-inline-flex gap-2">
+            <a href="https://github.com/Shivam-poddar66" target="_blank" class="footer-social-link" title="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/shivam-kumar-747973204/" target="_blank" class="footer-social-link" title="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://wa.me/919472774549" target="_blank" class="footer-social-link" title="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="shivam kumar 04-2025.pdf" download class="footer-social-link" title="Download PDF Resume">
+              <i class="bi bi-file-earmark-arrow-down"></i>
+            </a>
           </div>
         </div>
+
       </div>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Scroll To Top Button -->
+  <div class="scroll-top-btn" title="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS Libraries -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- 21st.dev Pro Interactions JS -->
+  <script src="assets/js/pro-21st.js"></script>
 
 </body>
-
 </html>
